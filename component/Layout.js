@@ -6,7 +6,6 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYVB2KFQ5Q"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
