@@ -39,7 +39,6 @@ export default function Home() {
       <div className='card card-glass max-w-[572px] mx-auto'>
         <div className='flex flex-col justify-center items-center px-3 gap-3'>
           <Image src={ProfilePic} width={200} height={200} alt='Dean Abner Julian' />
-          <h1 className='text-3xl font-bold hidden'>Dean Abner Julian Portfolio, Webdeveloper</h1>
           <h2 className='font-medium md:font-semibold text-sm md:text-base text-white'>Hi kawan! Perkenalkan saya</h2>
           <h2 className='font-extrabold text-2xl md:text-4xl text-[#40142A]'>Dean Abner Julian</h2>
           <div className='flex justify-center space-x-4 items-center'>
