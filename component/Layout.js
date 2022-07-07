@@ -7,13 +7,18 @@ export default function Layout({ children }) {
     <>
       <Head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYVB2KFQ5Q"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-ZYVB2KFQ5Q');
-        </script>
+        <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ZYVB2KFQ5Q', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
       </Head>
       <Navbar />
         <main className='w-full p-3 md:p-0'>{children}</main>
