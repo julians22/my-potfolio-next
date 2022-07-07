@@ -3,12 +3,25 @@ import Image from 'next/image'
 import ProfilePic from './../public/profile.png'
 import Head from 'next/head'
 
+const site = "https://julian-portfolios.herokuapp.com";
+const canonicalURL = site;
+
 export default function Home() {
   return (
     <>
     <Head>
-        <title>Julian Portfolio</title>
+        <title>Dean Abner Julian</title>
+        <meta name="description" content="Dean Abner Julian Portfolio" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="canonical" href={canonicalURL} />
+        <meta property="og:title" content="Dean Abner Julian" />
+        <meta property="og:description" content="Dean Abner Julian Portfolio" />
+        <meta property="og:image" content={site + "/profile.png"} />
+        <meta property="og:url" content={site} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Dean Abner Julian" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
     </Head>
     <div className='relative py-2 md:py-20 overflow-hidden'>
       <div className='absolute mx-auto top-0 md:top-[50px] bottom-0 left-2 md:left-1/2 md:-translate-x-1/2 overflow-hidden'>
@@ -25,9 +38,10 @@ export default function Home() {
 
       <div className='card card-glass max-w-[572px] mx-auto'>
         <div className='flex flex-col justify-center items-center px-3 gap-3'>
-          <Image src={ProfilePic} width={200} height={200} />
-          <h5 className='font-medium md:font-semibold text-sm md:text-base text-white'>Hi kawan! Perkenalkan saya</h5>
-          <h1 className='font-extrabold text-2xl md:text-4xl text-[#40142A]'>Dean Abner Julian</h1>
+          <Image src={ProfilePic} width={200} height={200} alt='Dean Abner Julian' />
+          <h1 className='text-3xl font-bold hidden'>Dean Abner Julian Portfolio, Webdeveloper</h1>
+          <h2 className='font-medium md:font-semibold text-sm md:text-base text-white'>Hi kawan! Perkenalkan saya</h2>
+          <h2 className='font-extrabold text-2xl md:text-4xl text-[#40142A]'>Dean Abner Julian</h2>
           <div className='flex justify-center space-x-4 items-center'>
             <span className='badge badge-gradient'>Fullstack Developer</span>
             <span className='text-white font-bold text-base'>|</span>
