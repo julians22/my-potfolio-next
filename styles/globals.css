@@ -7,7 +7,7 @@
 /* component tailwind */
 @layer components {
   .card{
-    @apply rounded-3xl px-7 py-5;
+    @apply rounded-3xl px-5 md:px-7 py-5;
   }
 
   .card.card-glass{
@@ -17,7 +17,7 @@
   }
 
   .badge{
-    @apply flex justify-center py-1 px-3 rounded-2xl text-sm;
+    @apply flex justify-center py-1 px-1 md:px-3 rounded-2xl text-xs md:text-sm;
   }
 
   .badge.badge-gradient{
