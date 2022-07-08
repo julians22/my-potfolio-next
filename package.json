@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p $PORT",
-    "heroku-postbuild": "next build",
-    "lint": "next lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "12.2.0",
@@ -21,5 +19,6 @@
     "eslint-config-next": "12.2.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.4"
-  }
+  },
+  "cacheDirectories": [".next/cache"]
 }
