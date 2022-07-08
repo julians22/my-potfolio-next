@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import ProfilePic from './../public/profile.png'
+import ProfilePic from './../public/profile_2.png'
 import Head from 'next/head'
 
 const site = "https://julian-portfolios.herokuapp.com";
